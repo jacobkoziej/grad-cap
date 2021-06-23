@@ -142,6 +142,20 @@ uint8_t calc_is_bae[] = {
 	0b01111001,  // E
 };
 
+uint8_t eecs_is_bae[] = {
+	0b01111001,  // E
+	0b01111001,  // E
+	0b00111001,  // C
+	0b01101101,  // S
+	0b00000000,  // none
+	0b00000110,  // I
+	0b01101101,  // S
+	0b00000000,  // none
+	0b01111100,  // b
+	0b01110111,  // A
+	0b01111001,  // E
+};
+
 /*
 uint8_t oh_thats_cap[] = {
 	0b01011100,  // o
@@ -287,6 +301,7 @@ msg_t msg[] = {
 	{i_love_my_job,      sizeof(i_love_my_job)},
 	{las_pretty_eh,      sizeof(las_pretty_eh)},
 	{calc_is_bae,        sizeof(calc_is_bae)},
+	{eecs_is_bae,        sizeof(eecs_is_bae)},
 	/*
 	{oh_thats_cap,       sizeof(oh_thats_cap)},
 	{poggers,            sizeof(poggers)},
