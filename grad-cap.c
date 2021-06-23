@@ -84,6 +84,12 @@ uint8_t cooper_ee21[] = {
 };
 
 
+msg_t msg[] = {
+	{bths_21,     sizeof(bths_21)},
+	{cooper_ee21, sizeof(cooper_ee21)}
+};
+
+
 int main(void)
 {
 	// set data direction to output
