@@ -40,6 +40,7 @@
 #include <avr/io.h>
 #include <avr/power.h>
 #include <avr/sleep.h>
+#include <stdbool.h>
 
 
 int main(void)
@@ -70,6 +71,13 @@ int main(void)
 	TIMSK2 = _BV(TOIE2);             // enable overflow interrupt
 
 	sei();
+
+
+	while (true) {
+		// sleep as much as possible
+		sleep_mode();
+		sleep_disable();
+	}
 
 
 	return 0;
