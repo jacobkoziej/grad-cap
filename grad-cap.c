@@ -184,6 +184,13 @@ uint8_t its_not_a_bomb[] = {
 	0b01111100,  // b
 };
 
+uint8_t hhhh[] = {
+	0b01110110,  // H
+	0b01110100,  // h
+	0b01110100,  // h
+	0b01110100,  // h
+};
+
 
 msg_t msg[] = {
 	{bths_21,        sizeof(bths_21)},
@@ -195,6 +202,7 @@ msg_t msg[] = {
 	{oh_thats_cap,   sizeof(oh_thats_cap)},
 	{poggers,        sizeof(poggers)},
 	{its_not_a_bomb, sizeof(its_not_a_bomb)},
+	{hhhh,           sizeof(hhhh)},
 };
 
 
