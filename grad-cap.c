@@ -204,6 +204,17 @@ uint8_t sussy_baka[] = {
 	0b01110111,  // A
 };
 
+uint8_t lets_goo[] = {
+	0b00111000,  // L
+	0b01111001,  // E
+	0b01111000,  // t
+	0b01101101,  // S
+	0b00000000,  // none
+	0b01101111,  // g
+	0b00111111,  // O
+	0b00111111,  // O
+};
+
 
 msg_t msg[] = {
 	{bths_21,        sizeof(bths_21)},
@@ -217,6 +228,7 @@ msg_t msg[] = {
 	{its_not_a_bomb, sizeof(its_not_a_bomb)},
 	{hhhh,           sizeof(hhhh)},
 	{sussy_baka,     sizeof(sussy_baka)},
+	{lets_goo,       sizeof(lets_goo)},
 };
 
 
