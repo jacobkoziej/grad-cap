@@ -47,6 +47,23 @@
 #define DIGIT_CNT 4
 
 
+/*
+ * All the available messages to display.
+ *
+ * NOTE: I am aware that there are repeating values.  Since all I'm doing is
+ * displaying a few messages, I'm fine with being a bit sloppy with memory ;)
+ */
+uint8_t bths_21[] = {
+	0b01111100,  // b
+	0b01111000,  // t
+	0b01110110,  // H
+	0b01101101,  // S
+	0b00000000,  // none
+	0b01011011,  // 2
+	0b00000110   // 1
+};
+
+
 int main(void)
 {
 	// set data direction to output
