@@ -96,6 +96,22 @@ uint8_t giganerd[] = {
 	0b01011110,  // d
 };
 
+uint8_t i_love_my_job[] = {
+	0b00000110,  // I
+	0b00000000,  // none
+	0b00111000,  // L
+	0b00111111,  // O
+	0b00111110,  // V
+	0b01111001,  // E
+	0b00000000,  // none
+	0b01010100,  // m
+	0b01101110,  // y
+	0b00000000,  // none
+	0b00001110,  // J
+	0b00111111,  // O
+	0b01111100,  // b
+};
+
 uint8_t las_pretty_eh[] = {
 	0b00111000,  // L
 	0b01110111,  // A
@@ -163,6 +179,7 @@ msg_t msg[] = {
 	{bths_21,        sizeof(bths_21)},
 	{cooper_ee25,    sizeof(cooper_ee25)},
 	{giganerd,       sizeof(giganerd)},
+	{i_love_my_job,  sizeof(i_love_my_job)},
 	{las_pretty_eh,  sizeof(las_pretty_eh)},
 	{calc_is_bae,    sizeof(calc_is_bae)},
 	{oh_thats_cap,   sizeof(oh_thats_cap)},
