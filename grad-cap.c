@@ -85,6 +85,17 @@ uint8_t cooper_ee25[] = {
 	0b01101101   // 5
 };
 
+uint8_t giganerd[] = {
+	0b01101111,  // g
+	0b00000110,  // I
+	0b01101111,  // g
+	0b01110111,  // A
+	0b01010100,  // n
+	0b01111001,  // E
+	0b01010000,  // r
+	0b01011110,  // d
+};
+
 uint8_t its_not_a_bomb[] = {
 	0b00000100,  // i
 	0b01111000,  // t
@@ -106,6 +117,7 @@ uint8_t its_not_a_bomb[] = {
 msg_t msg[] = {
 	{bths_21,        sizeof(bths_21)},
 	{cooper_ee25,    sizeof(cooper_ee25)},
+	{giganerd,       sizeof(giganerd)},
 	{its_not_a_bomb, sizeof(its_not_a_bomb)}
 };
 
