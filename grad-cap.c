@@ -157,6 +157,16 @@ uint8_t oh_thats_cap[] = {
 	0b01110011,  // P
 };
 
+uint8_t poggers[] = {
+	0b01110011,  // P
+	0b00111111,  // O
+	0b01101111,  // g
+	0b01101111,  // g
+	0b01111001,  // E
+	0b01010000,  // r
+	0b01101101,  // S
+};
+
 uint8_t its_not_a_bomb[] = {
 	0b00000100,  // i
 	0b01111000,  // t
@@ -183,6 +193,7 @@ msg_t msg[] = {
 	{las_pretty_eh,  sizeof(las_pretty_eh)},
 	{calc_is_bae,    sizeof(calc_is_bae)},
 	{oh_thats_cap,   sizeof(oh_thats_cap)},
+	{poggers,        sizeof(poggers)},
 	{its_not_a_bomb, sizeof(its_not_a_bomb)},
 };
 
