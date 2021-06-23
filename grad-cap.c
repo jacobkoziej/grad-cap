@@ -53,6 +53,12 @@
  * NOTE: I am aware that there are repeating values.  Since all I'm doing is
  * displaying a few messages, I'm fine with being a bit sloppy with memory ;)
  */
+typedef struct {
+	uint8_t *msg;
+	uint8_t  siz;
+} msg_t;
+
+
 uint8_t bths_21[] = {
 	0b01111100,  // b
 	0b01111000,  // t
