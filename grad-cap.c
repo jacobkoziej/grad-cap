@@ -68,7 +68,7 @@ uint8_t bths_21[] = {
 	0b01101101,  // S
 	0b00000000,  // none
 	0b01011011,  // 2
-	0b00000110   // 1
+	0b00000110,  // 1
 };
 
 uint8_t cooper_ee25[] = {
@@ -82,7 +82,7 @@ uint8_t cooper_ee25[] = {
 	0b01111001,  // E
 	0b01111001,  // E
 	0b01011011,  // 2
-	0b01101101   // 5
+	0b01101101,  // 5
 };
 
 uint8_t giganerd[] = {
@@ -155,7 +155,7 @@ uint8_t its_not_a_bomb[] = {
 	0b01111100,  // b
 	0b01011100,  // o
 	0b01010100,  // m
-	0b01111100   // b
+	0b01111100,  // b
 };
 
 
@@ -166,7 +166,7 @@ msg_t msg[] = {
 	{las_pretty_eh,  sizeof(las_pretty_eh)},
 	{calc_is_bae,    sizeof(calc_is_bae)},
 	{oh_thats_cap,   sizeof(oh_thats_cap)},
-	{its_not_a_bomb, sizeof(its_not_a_bomb)}
+	{its_not_a_bomb, sizeof(its_not_a_bomb)},
 };
 
 
