@@ -159,11 +159,13 @@ int main(void)
 
 		// enable the appropriate digit
 		PORTB |= 0x0F;
+		display_msg(digit, false);
 		PORTB &= ~_BV(digit);
 
 
 		// display scrolling
 		if (ticks >= TICKS_SCROLL) {
+			display_msg(digit, true);
 			ticks = 0;
 		}
 
