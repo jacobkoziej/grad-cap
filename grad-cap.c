@@ -85,10 +85,28 @@ uint8_t cooper_ee25[] = {
 	0b01101101   // 5
 };
 
+uint8_t its_not_a_bomb[] = {
+	0b00000100,  // i
+	0b01111000,  // t
+	0b01101101,  // S
+	0b00000000,  // none
+	0b01010100,  // n
+	0b01011100,  // o
+	0b01111000,  // t
+	0b00000000,  // none
+	0b01110111,  // A
+	0b00000000,  // none
+	0b01111100,  // b
+	0b01011100,  // o
+	0b01010100,  // m
+	0b01111100   // b
+};
+
 
 msg_t msg[] = {
-	{bths_21,     sizeof(bths_21)},
-	{cooper_ee25, sizeof(cooper_ee25)}
+	{bths_21,        sizeof(bths_21)},
+	{cooper_ee25,    sizeof(cooper_ee25)},
+	{its_not_a_bomb, sizeof(its_not_a_bomb)}
 };
 
 
