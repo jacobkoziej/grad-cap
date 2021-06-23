@@ -38,6 +38,7 @@
 
 #include <avr/io.h>
 #include <avr/power.h>
+#include <avr/sleep.h>
 
 
 int main(void)
@@ -58,6 +59,8 @@ int main(void)
 	power_timer1_disable();
 	power_twi_disable();
 	power_usart0_disable();
+
+	set_sleep_mode(SLEEP_MODE_PWR_SAVE);
 
 
 	return 0;
