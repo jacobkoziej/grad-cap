@@ -112,6 +112,20 @@ uint8_t las_pretty_eh[] = {
 	0b01110100,  // h
 };
 
+uint8_t calc_is_bae[] = {
+	0b00111001,  // C
+	0b01110111,  // A
+	0b00111000,  // L
+	0b00111001,  // C
+	0b00000000,  // none
+	0b00000110,  // I
+	0b01101101,  // S
+	0b00000000,  // none
+	0b01111100,  // b
+	0b01110111,  // A
+	0b01111001,  // E
+};
+
 uint8_t oh_thats_cap[] = {
 	0b01011100,  // o
 	0b01110100,  // h
@@ -150,6 +164,7 @@ msg_t msg[] = {
 	{cooper_ee25,    sizeof(cooper_ee25)},
 	{giganerd,       sizeof(giganerd)},
 	{las_pretty_eh,  sizeof(las_pretty_eh)},
+	{calc_is_bae,    sizeof(calc_is_bae)},
 	{oh_thats_cap,   sizeof(oh_thats_cap)},
 	{its_not_a_bomb, sizeof(its_not_a_bomb)}
 };
