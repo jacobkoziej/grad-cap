@@ -149,5 +149,5 @@ int main(void)
 
 ISR(TIMER2_OVF_vect)
 {
-	// ISR is just used to get out or power-save mode
+	// ISR is just used to get out of power-save mode
 }
