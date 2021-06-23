@@ -112,6 +112,21 @@ uint8_t las_pretty_eh[] = {
 	0b01110100,  // h
 };
 
+uint8_t oh_thats_cap[] = {
+	0b01011100,  // o
+	0b01110100,  // h
+	0b00000000,  // none
+	0b01111000,  // t
+	0b01110110,  // H
+	0b01110111,  // A
+	0b01111000,  // t
+	0b01101101,  // S
+	0b00000000,  // none
+	0b00111001,  // C
+	0b01110111,  // A
+	0b01110011,  // P
+};
+
 uint8_t its_not_a_bomb[] = {
 	0b00000100,  // i
 	0b01111000,  // t
@@ -135,6 +150,7 @@ msg_t msg[] = {
 	{cooper_ee25,    sizeof(cooper_ee25)},
 	{giganerd,       sizeof(giganerd)},
 	{las_pretty_eh,  sizeof(las_pretty_eh)},
+	{oh_thats_cap,   sizeof(oh_thats_cap)},
 	{its_not_a_bomb, sizeof(its_not_a_bomb)}
 };
 
