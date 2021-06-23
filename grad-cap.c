@@ -258,9 +258,9 @@ msg_t msg[] = {
 void display_msg(uint8_t digit, bool next)
 {
 	/*
-	 * Since a nice scrolling display is preffered, the letter index is
-	 * defaulted to a negative value. In doing sowe have some padding while
-	 * we're transitioning between messages.
+	 * Since a nice scrolling display is preferred, the letter index is
+	 * defaulted to a negative value. In doing so we have some padding
+	 * while we're transitioning between messages.
 	 */
 	static uint8_t index = 0;
 	static int8_t  lttr  = -DIGIT_CNT + 1;
