@@ -74,12 +74,12 @@ int main(void)
 	TCCR2B = _BV(CS22) | _BV(CS20);  // scalar for ~1.6ms overflow @20MHz
 	TIMSK2 = _BV(TOIE2);             // enable overflow interrupt
 
-	sei();
-
 
 	while (true) {
 		static uint16_t ticks = 0;
 		static uint8_t  digit = 0;
+
+		cli();
 
 
 		// enable the appropriate digit
@@ -91,6 +91,8 @@ int main(void)
 		++digit;
 		digit %= DIGIT_CNT;
 
+
+		sei();
 
 		// sleep as much as possible
 		sleep_mode();
