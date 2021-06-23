@@ -34,3 +34,21 @@
  * PB2 - digit 3
  * PB3 - digit 4
  */
+
+
+#include <avr/io.h>
+
+
+int main(void)
+{
+	// set data direction to output
+	DDRB |= 0x0F;
+	DDRD  = 0xFF;
+
+	// clear outputs
+	PORTB |= 0x0F;
+	PORTD  = 0x00;
+
+
+	return 0;
+}
