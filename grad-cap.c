@@ -257,6 +257,17 @@ uint8_t wish_you_were_here[] = {
 	0b01111001,  // E
 };
 
+uint8_t extra_af[] = {
+	0b01111001,  // E
+	0b01110110,  // X
+	0b01111000,  // t
+	0b01010000,  // r
+	0b01110111,  // A
+	0b00000000,  // none
+	0b01110111,  // A
+	0b01110001,  // F
+};
+
 
 msg_t msg[] = {
 	{bths_21,            sizeof(bths_21)},
@@ -274,6 +285,7 @@ msg_t msg[] = {
 	{fast_boi,           sizeof(fast_boi)},
 	{headass,            sizeof(headass)},
 	{wish_you_were_here, sizeof(wish_you_were_here)},
+	{extra_af,           sizeof(extra_af)},
 };
 
 
