@@ -226,6 +226,16 @@ uint8_t fast_boi[] = {
 	0b00000100,  // i
 };
 
+uint8_t headass[] = {
+	0b01110110,  // H
+	0b01111001,  // E
+	0b01110111,  // A
+	0b01011110,  // d
+	0b01110111,  // A
+	0b01101101,  // S
+	0b01101101,  // S
+};
+
 
 msg_t msg[] = {
 	{bths_21,        sizeof(bths_21)},
@@ -241,6 +251,7 @@ msg_t msg[] = {
 	{sussy_baka,     sizeof(sussy_baka)},
 	{lets_goo,       sizeof(lets_goo)},
 	{fast_boi,       sizeof(fast_boi)},
+	{headass,        sizeof(headass)},
 };
 
 
