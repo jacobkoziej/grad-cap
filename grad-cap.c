@@ -46,7 +46,7 @@
 
 #define DIGIT_CNT 4
 
-#define TICKS_SCROLL 666
+#define TICKS_SCROLL 333
 
 
 /*
