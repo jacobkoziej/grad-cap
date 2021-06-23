@@ -41,6 +41,7 @@
 #include <avr/power.h>
 #include <avr/sleep.h>
 #include <stdbool.h>
+#include <stdint.h>
 
 
 int main(void)
@@ -74,6 +75,11 @@ int main(void)
 
 
 	while (true) {
+		static uint16_t ticks = 0;
+
+		++ticks;
+
+
 		// sleep as much as possible
 		sleep_mode();
 		sleep_disable();
