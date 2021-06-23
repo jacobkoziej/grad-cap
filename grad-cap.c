@@ -215,6 +215,17 @@ uint8_t lets_goo[] = {
 	0b00111111,  // O
 };
 
+uint8_t fast_boi[] = {
+	0b01110001,  // F
+	0b01110111,  // A
+	0b01101101,  // S
+	0b01111000,  // t
+	0b00000000,  // none
+	0b01111100,  // b
+	0b01011100,  // o
+	0b00000100,  // i
+};
+
 
 msg_t msg[] = {
 	{bths_21,        sizeof(bths_21)},
@@ -229,6 +240,7 @@ msg_t msg[] = {
 	{hhhh,           sizeof(hhhh)},
 	{sussy_baka,     sizeof(sussy_baka)},
 	{lets_goo,       sizeof(lets_goo)},
+	{fast_boi,       sizeof(fast_boi)},
 };
 
 
