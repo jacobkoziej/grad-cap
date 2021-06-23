@@ -44,6 +44,9 @@
 #include <stdint.h>
 
 
+#define DIGIT_CNT 4
+
+
 int main(void)
 {
 	// set data direction to output
@@ -76,8 +79,11 @@ int main(void)
 
 	while (true) {
 		static uint16_t ticks = 0;
+		static uint8_t  digit = 0;
 
 		++ticks;
+		++digit;
+		digit %= DIGIT_CNT;
 
 
 		// sleep as much as possible
