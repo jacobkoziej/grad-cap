@@ -46,6 +46,8 @@
 
 #define DIGIT_CNT 4
 
+#define TICKS_SCROLL 666
+
 
 /*
  * All the available messages to display.
@@ -128,6 +130,12 @@ int main(void)
 		// enable the appropriate digit
 		PORTB |= 0x0F;
 		PORTB &= ~_BV(digit);
+
+
+		// display scrolling
+		if (ticks >= TICKS_SCROLL) {
+			ticks = 0;
+		}
 
 
 		++ticks;
