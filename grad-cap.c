@@ -92,6 +92,36 @@ msg_t msg[] = {
 };
 
 
+void display_msg(uint8_t digit, bool next)
+{
+	/*
+	 * Since a nice scrolling display is preffered, the letter index is
+	 * defaulted to a negative value. In doing sowe have some padding while
+	 * we're transitioning between messages.
+	 */
+	static uint8_t index = 0;
+	static int8_t  lttr  = -DIGIT_CNT + 1;
+
+
+	if (next) {
+		++lttr;
+		return;  // prevent partial refreshes
+	}
+
+
+	if (lttr >= msg[index].siz) {
+		lttr = -DIGIT_CNT + 1;
+		++index;
+		index %= sizeof(msg) / sizeof(msg_t);
+	}
+
+
+	PORTD = (lttr + digit >= msg[index].siz || lttr + digit < 0)
+		? 0
+		: msg[index].msg[lttr + digit];
+}
+
+
 int main(void)
 {
 	// set data direction to output
