@@ -81,6 +81,12 @@ int main(void)
 		static uint16_t ticks = 0;
 		static uint8_t  digit = 0;
 
+
+		// enable the appropriate digit
+		PORTB |= 0x0F;
+		PORTB &= ~_BV(digit);
+
+
 		++ticks;
 		++digit;
 		digit %= DIGIT_CNT;
