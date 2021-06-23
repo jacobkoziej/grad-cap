@@ -142,6 +142,7 @@ uint8_t calc_is_bae[] = {
 	0b01111001,  // E
 };
 
+/*
 uint8_t oh_thats_cap[] = {
 	0b01011100,  // o
 	0b01110100,  // h
@@ -183,6 +184,7 @@ uint8_t its_not_a_bomb[] = {
 	0b01010100,  // m
 	0b01111100,  // b
 };
+*/
 
 uint8_t hhhh[] = {
 	0b01110110,  // H
@@ -204,6 +206,7 @@ uint8_t sussy_baka[] = {
 	0b01110111,  // A
 };
 
+/*
 uint8_t lets_goo[] = {
 	0b00111000,  // L
 	0b01111001,  // E
@@ -242,6 +245,7 @@ uint8_t headass[] = {
 	0b01101101,  // S
 	0b01101101,  // S
 };
+*/
 
 uint8_t wish_you_were_here[] = {
 	0b00011100,  // w
@@ -283,15 +287,19 @@ msg_t msg[] = {
 	{i_love_my_job,      sizeof(i_love_my_job)},
 	{las_pretty_eh,      sizeof(las_pretty_eh)},
 	{calc_is_bae,        sizeof(calc_is_bae)},
+	/*
 	{oh_thats_cap,       sizeof(oh_thats_cap)},
 	{poggers,            sizeof(poggers)},
 	{its_not_a_bomb,     sizeof(its_not_a_bomb)},
+	*/
 	{hhhh,               sizeof(hhhh)},
 	{sussy_baka,         sizeof(sussy_baka)},
+	/*
 	{lets_goo,           sizeof(lets_goo)},
 	{bruh,               sizeof(bruh)},
 	{fast_boi,           sizeof(fast_boi)},
 	{headass,            sizeof(headass)},
+	*/
 	{wish_you_were_here, sizeof(wish_you_were_here)},
 	{extra_af,           sizeof(extra_af)},
 };
