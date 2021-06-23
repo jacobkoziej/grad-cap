@@ -96,6 +96,22 @@ uint8_t giganerd[] = {
 	0b01011110,  // d
 };
 
+uint8_t las_pretty_eh[] = {
+	0b00111000,  // L
+	0b01110111,  // A
+	0b01101101,  // S
+	0b00000000,  // none
+	0b01110011,  // P
+	0b01010000,  // r
+	0b01111001,  // E
+	0b01111000,  // t
+	0b01111000,  // t
+	0b01101110,  // y
+	0b00000000,  // none
+	0b01111001,  // E
+	0b01110100,  // h
+};
+
 uint8_t its_not_a_bomb[] = {
 	0b00000100,  // i
 	0b01111000,  // t
@@ -118,6 +134,7 @@ msg_t msg[] = {
 	{bths_21,        sizeof(bths_21)},
 	{cooper_ee25,    sizeof(cooper_ee25)},
 	{giganerd,       sizeof(giganerd)},
+	{las_pretty_eh,  sizeof(las_pretty_eh)},
 	{its_not_a_bomb, sizeof(its_not_a_bomb)}
 };
 
