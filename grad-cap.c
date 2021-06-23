@@ -37,6 +37,7 @@
 
 
 #include <avr/io.h>
+#include <avr/power.h>
 
 
 int main(void)
@@ -48,6 +49,15 @@ int main(void)
 	// clear outputs
 	PORTB |= 0x0F;
 	PORTD  = 0x00;
+
+
+	// disable unnecessary components
+	power_adc_disable();
+	power_spi_disable();
+	power_timer0_disable();
+	power_timer1_disable();
+	power_twi_disable();
+	power_usart0_disable();
 
 
 	return 0;
