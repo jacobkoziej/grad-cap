@@ -69,7 +69,7 @@ uint8_t bths_21[] = {
 	0b00000110   // 1
 };
 
-uint8_t cooper_ee21[] = {
+uint8_t cooper_ee25[] = {
 	0b00111001,  // C
 	0b00111111,  // O
 	0b00111111,  // O
@@ -86,7 +86,7 @@ uint8_t cooper_ee21[] = {
 
 msg_t msg[] = {
 	{bths_21,     sizeof(bths_21)},
-	{cooper_ee21, sizeof(cooper_ee21)}
+	{cooper_ee25, sizeof(cooper_ee25)}
 };
 
 
