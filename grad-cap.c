@@ -191,6 +191,19 @@ uint8_t hhhh[] = {
 	0b01110100,  // h
 };
 
+uint8_t sussy_baka[] = {
+	0b01101101,  // S
+	0b00111110,  // U
+	0b01101101,  // S
+	0b01101101,  // S
+	0b01101110,  // y
+	0b00000000,  // none
+	0b01111100,  // b
+	0b01110111,  // A
+	0b01110100,  // k
+	0b01110111,  // A
+};
+
 
 msg_t msg[] = {
 	{bths_21,        sizeof(bths_21)},
@@ -203,6 +216,7 @@ msg_t msg[] = {
 	{poggers,        sizeof(poggers)},
 	{its_not_a_bomb, sizeof(its_not_a_bomb)},
 	{hhhh,           sizeof(hhhh)},
+	{sussy_baka,     sizeof(sussy_baka)},
 };
 
 
