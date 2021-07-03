@@ -358,14 +358,14 @@ void display_msg(uint8_t digit, bool next)
 
 	if (next) {
 		++lttr;
+
+		if (lttr >= msg[index].siz) {
+			lttr = -DIGIT_CNT + 1;
+			++index;
+			index %= sizeof(msg) / sizeof(msg_t);
+		}
+
 		return;  // prevent partial refreshes
-	}
-
-
-	if (lttr >= msg[index].siz) {
-		lttr = -DIGIT_CNT + 1;
-		++index;
-		index %= sizeof(msg) / sizeof(msg_t);
 	}
 
 
